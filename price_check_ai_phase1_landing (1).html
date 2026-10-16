@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Price Check AI — Find the Better Price</title>
+<meta name="description" content="Price Check AI compares product offers to help shoppers find better prices and value.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f8fc;color:#101828}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:#fff;border-bottom:1px solid #e8eaf0}
+.logo{font-size:22px;font-weight:800}.logo span{color:#315efb}
+nav a{color:#475467;text-decoration:none;margin-left:24px;font-size:14px}
+.hero{padding:82px 7% 70px;text-align:center;background:linear-gradient(180deg,#fff 0%,#f7f8fc 100%)}
+.badge{display:inline-block;padding:8px 13px;border-radius:30px;background:#eef2ff;color:#315efb;font-size:13px;font-weight:700}
+h1{font-size:clamp(40px,6vw,72px);line-height:1.02;margin:22px auto 18px;max-width:900px;letter-spacing:-2px}
+.hero p{font-size:19px;color:#667085;max-width:650px;margin:0 auto 30px;line-height:1.6}
+.search{max-width:760px;margin:auto;display:flex;background:#fff;border:1px solid #d9dce5;border-radius:16px;padding:7px;box-shadow:0 12px 35px rgba(16,24,40,.08)}
+.search input{flex:1;border:0;outline:0;padding:16px;font-size:16px;border-radius:12px}
+.search button{border:0;background:#315efb;color:white;font-weight:700;padding:0 24px;border-radius:12px;cursor:pointer}
+.note{font-size:12px!important;margin-top:12px!important;color:#98a2b3!important}
+section{padding:65px 7%}.wrap{max-width:1050px;margin:auto}
+h2{text-align:center;font-size:34px;margin:0 0 12px}.sub{text-align:center;color:#667085;margin:0 auto 38px;max-width:650px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #eaecf0;border-radius:18px;padding:28px;box-shadow:0 5px 18px rgba(16,24,40,.04)}
+.icon{font-size:30px}.card h3{margin:14px 0 8px}.card p{color:#667085;line-height:1.55}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.category{background:#101828;color:white;border-radius:16px;padding:25px}.category p{color:#cbd5e1;font-size:14px}
+footer{padding:30px 7%;background:#101828;color:#98a2b3;text-align:center;font-size:13px}
+@media(max-width:700px){nav{padding:0 5%}nav a{display:none}.hero{padding:60px 5%}.search{display:block;background:transparent;border:0;box-shadow:none}.search input,.search button{width:100%;height:54px;margin-bottom:9px;background:#fff}.search button{background:#315efb}.grid,.categories{grid-template-columns:1fr}section{padding:50px 5%}}
+</style>
+</head>
+<body>
+<nav><div class="logo">Price Check <span>AI</span></div><div><a href="#how">How it works</a><a href="#categories">Categories</a></div></nav>
+
+<main>
+<section class="hero">
+<div class="badge">AI-powered shopping comparison</div>
+<h1>Find the better price before you buy.</h1>
+<p>Search for a product and Price Check AI helps you compare offers, value and buying options across online stores.</p>
+<form class="search" onsubmit="event.preventDefault(); alert('Search is coming in the next build.');">
+<input aria-label="Product search" placeholder="Try: iPhone 17 Pro, gaming laptop, 55-inch TV">
+<button type="submit">Check Price</button>
+</form>
+<p class="note">Prices and availability can change. We may earn a commission from qualifying purchases.</p>
+</section>
+
+<section id="how"><div class="wrap">
+<h2>Shopping made simpler</h2>
+<p class="sub">One place to discover offers instead of opening dozens of stores and tabs.</p>
+<div class="grid">
+<div class="card"><div class="icon">🔎</div><h3>Search</h3><p>Tell us exactly what you want, using a product name or natural language.</p></div>
+<div class="card"><div class="icon">⚖️</div><h3>Compare</h3><p>Compare price, seller, shipping, ratings and other useful buying factors.</p></div>
+<div class="card"><div class="icon">🤖</div><h3>Choose</h3><p>Get an AI-assisted recommendation focused on value—not just the lowest sticker price.</p></div>
+</div>
+</div></section>
+
+<section id="categories"><div class="wrap">
+<h2>Starting with three categories</h2>
+<p class="sub">We will validate these first before expanding.</p>
+<div class="categories">
+<div class="category"><h3>💻 Laptops</h3><p>High-intent purchases with meaningful order values.</p></div>
+<div class="category"><h3>📱 Smartphones</h3><p>Frequent searches, strong brand recognition and easy comparisons.</p></div>
+<div class="category"><h3>📺 TVs</h3><p>Large-ticket purchases where price comparison can matter significantly.</p></div>
+</div>
+</div></section>
+</main>
+
+<footer>© 2026 Price Check AI · Independent shopping comparison service</footer>
+</body>
+</html>
